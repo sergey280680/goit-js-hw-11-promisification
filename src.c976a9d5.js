@@ -6,9 +6,11 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 const e=e=>new Promise(o=>{setTimeout(()=>{o(e)},e)}),o=e=>console.log(`Resolved after ${e}ms`);e(2e3).then(o),e(3500).then(o),e(1e3).then(o);
 },{}],"un0o":[function(require,module,exports) {
 const e=[{name:"Mango",active:!0},{name:"Poly",active:!1},{name:"Ajax",active:!0},{name:"Lux",active:!1}],a=(e,a)=>{const n=e.map(e=>e.name===a?{...e,active:!e.active}:e);return Promise.resolve(n)},n=e=>console.table(e);a(e,"Mango").then(n),a(e,"Lux").then(n);
+},{}],"L76l":[function(require,module,exports) {
+const t=(t,n)=>Math.floor(Math.random()*(n-t+1)+t),n=n=>{const a=t(200,500);return new Promise((t,o)=>{setTimeout(()=>{Math.random()>.3?t(n.id,a):o(n.id)},a)})},a=(t,n)=>{console.log(`Transaction ${t} processed in ${n}ms`)},o=t=>{console.warn(`Error processing transaction ${t}. Please try again later.`)};n({id:70,amount:150}).then(a).catch(o),n({id:71,amount:230}).then(a).catch(o),n({id:72,amount:75}).then(a).catch(o),n({id:73,amount:100}).then(a).catch(o);
 },{}],"QvaY":[function(require,module,exports) {
 "use strict";require("./_task"),require("./_task-1"),require("./_task-2"),require("./_task-3");
-},{"./_task":"Cx8f","./_task-1":"Zrsg","./_task-2":"un0o","./_task-3":"Cx8f"}],"Focm":[function(require,module,exports) {
+},{"./_task":"Cx8f","./_task-1":"Zrsg","./_task-2":"un0o","./_task-3":"L76l"}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/index.js");
 },{"./sass/main.scss":"clu1","./js/index.js":"QvaY"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-11-promisification/src.d815d986.js.map
+//# sourceMappingURL=/goit-js-hw-11-promisification/src.c976a9d5.js.map
