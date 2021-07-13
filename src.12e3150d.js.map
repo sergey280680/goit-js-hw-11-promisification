@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/index.js","index.js"],"names":[],"mappings":";;;;;AAIA,aAAA,QAAA;;ACHA,aADA,QAAA,oBACA,QAAA","file":"src.12e3150d.js","sourceRoot":"../src","sourcesContent":["// import './_task';\n// import './_task-1';\n// import './_task-2';\n// import './_task-3';\nimport './_sandra10.07.21';\n","import './sass/main.scss';\nimport './js/index.js'\n"]}
